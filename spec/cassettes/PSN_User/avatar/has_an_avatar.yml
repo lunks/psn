@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.psnapi.com.ar/ps3/api/psn.asmx/getPSNID?sPSNID=RazrPSN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.0
+      X-Aspnet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Dec 2012 18:46:00 GMT
+      Content-Length:
+      - '1833'
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PSNId xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.psnapi.com.ar/ps3/api\">\r\n
+        \ <ID>RazrPSN</ID>\r\n  <AvatarSmall>http://static-resource.np.community.playstation.net/avatar/WWS_E/E0039.png</AvatarSmall>\r\n
+        \ <AvatarMedium>http://static-resource.np.community.playstation.net/avatar/WWS_E/E0039.png</AvatarMedium>\r\n
+        \ <Avatar>http://static-resource.np.community.playstation.net/avatar/WWS_E/E0039.png</Avatar>\r\n
+        \ <AboutMe />\r\n  <Level>6</Level>\r\n  <Progress>19</Progress>\r\n  <Trophies>\r\n
+        \   <Earned>0</Earned>\r\n    <Total>252</Total>\r\n    <Platinum>0</Platinum>\r\n
+        \   <Gold>2</Gold>\r\n    <Silver>30</Silver>\r\n    <Bronze>220</Bronze>\r\n
+        \ </Trophies>\r\n  <Games />\r\n  <UpdateSignature xsi:nil=\"true\" />\r\n
+        \ <UpdateDate>2012-12-16T10:36:03.227</UpdateDate>\r\n  <UpdateGamesDate>2012-12-16T10:44:46.483</UpdateGamesDate>\r\n
+        \ <Country>\r\n    <IdCountry>232</IdCountry>\r\n    <Culture>US</Culture>\r\n
+        \   <Descripcion>United States</Descripcion>\r\n    <Bandera>/images/countries/US.png</Bandera>\r\n
+        \ </Country>\r\n  <Ranking>\r\n    <Position>0</Position>\r\n    <Total>0</Total>\r\n
+        \ </Ranking>\r\n  <CountryRanking>\r\n    <Position>0</Position>\r\n    <Total>0</Total>\r\n
+        \ </CountryRanking>\r\n  <Status>\r\n    <Online>false</Online>\r\n    <Away>false</Away>\r\n
+        \ </Status>\r\n  <LastSeen xsi:nil=\"true\" />\r\n  <LevelData>\r\n    <Points>4380</Points>\r\n
+        \   <Floor>4000</Floor>\r\n    <Ceiling>6000</Ceiling>\r\n    <Progress>19</Progress>\r\n
+        \   <level>6</level>\r\n  </LevelData>\r\n  <Plus>true</Plus>\r\n  <jid>RazrPSN@b5.us.np.playstation.net</jid>\r\n
+        \ <GameCompletion>12.685714285714285</GameCompletion>\r\n  <server>http://searchjid.usa.np.community.playstation.net</server>\r\n
+        \ <Background>\r\n    <R>98</R>\r\n    <G>98</G>\r\n    <B>98</B>\r\n    <A>FF</A>\r\n
+        \ </Background>\r\n</PSNId>"
+    http_version: 
+  recorded_at: Sun, 16 Dec 2012 18:45:34 GMT
+recorded_with: VCR 2.3.0
