@@ -10,7 +10,7 @@ module PSN
 
     private
     def fetch_games
-      API.new.games_for(@user)
+      PSN.api.games_for(@user)
     end
 
     def parse_games(xml_nodes)

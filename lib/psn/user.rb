@@ -15,7 +15,7 @@ module PSN
 
     private
     def profile_info
-      @profile_info ||= API.new.player_summaries_for(self)
+      @profile_info ||= PSN::api.player_summaries_for(self)
     end
 
 
