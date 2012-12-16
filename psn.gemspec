@@ -7,9 +7,9 @@ Gem::Specification.new do |gem|
   gem.name          = "psn"
   gem.version       = PSN::VERSION
   gem.authors       = ["Pedro Nascimento"]
-  gem.email         = ["pnascimento@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.email         = ["pedro@helabs.com.br"]
+  gem.description   = %q{PSN allows you to interact with the Playstation Network.}
+  gem.summary       = %q{PSN allows you to interact with the Playstation Network.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
