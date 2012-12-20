@@ -9,5 +9,8 @@ module PSN
     it "finds the correct name" do
       game.name.should == "Tales from Space: Mutant Blobs Attack"
     end
+    it "finds the correct platform" do
+      game.platform.should == :ps_vita
+    end
   end
 end
