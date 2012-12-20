@@ -22,7 +22,7 @@ module PSN
     private
     def fetch(url, options)
       url = "#{BASE_URL}/#{url}?#{normalize_params options}"
-      response = Retriable.retriable on: OpenURI::HTTPError, tries: RETRIES, interval: 1 do
+      response = Retriable.retriable on: OpenURI::HTTPError, tries: RETRIES, interval: 0.3 do
         open(url).read
       end
       parse_and_extract_response response
